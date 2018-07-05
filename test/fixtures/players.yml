@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  number: MyString
+  team: MyString
+  ppg: MyString
+  rpg: MyString
+  apg: MyString
+  ft: MyString
+  three: MyString
+
+two:
+  name: MyString
+  number: MyString
+  team: MyString
+  ppg: MyString
+  rpg: MyString
+  apg: MyString
+  ft: MyString
+  three: MyString

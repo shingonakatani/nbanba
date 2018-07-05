@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NBAApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <meta charset="utf-8">
+    <meta name="viewport"
+    content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+    
+
+  <body>
+    <div class="header">
+      <div class="header-logo"><%=link_to("NBA","/") %></div>
+      <div class="header-list">
+        <ul>
+          <li><%=link_to("NBAについて","/home/show") %></li>
+        </ul>
+      </div>
+    </div>
+    <%= yield %>
+  </body>
+</html>

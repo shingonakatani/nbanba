@@ -1,0 +1,36 @@
+          <div class="posts-main">
+            <h2>NBA トーク</h2>
+            <h4>ようこそ</h4>
+
+<div class="main posts-new">
+  <div class="container">
+    <h4 class="form-heading">投稿する</h4>
+    <h6>*140字以内で投稿してください</h6>
+    <%= form_tag("/posts/create") do %>
+    <div class="form">
+      <div class="form-body">
+        <textarea name="content"　value=""placeholder="いまどうしてる？"></textarea>
+        <input type="submit" value="post">
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
+
+
+<div class="main posts-index">
+  <div class="container">
+    <% @posts.each do |post| %>
+      <div class="posts-index-item">
+      <p>
+        <%= post.content %>
+      </p>
+      <div class="post-time">
+        <%= post.created_at %>
+      </div>
+      </p>
+      </div>
+    <% end %>
+  </div>
+</div>
+          </div>

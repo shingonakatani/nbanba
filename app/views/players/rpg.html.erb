@@ -1,0 +1,30 @@
+<h2>PLAYOFF LEADERS</h2>
+<h1>RPG</h1>
+<h3><%=link_to("PPG","/players/ppg/") %></h3>
+<h3><%=link_to("RPG","/players/rpg/") %></h3>
+<!--<h3><%=link_to("APG","/players/apg/") %></h3>-->
+<h3><%=link_to("FT%","/players/ft/") %></h3>
+<h3><%=link_to("3P%","/players/three/") %></h3>
+<h4>2017 - 2018 season</h4>
+  <div class="player-contents-index">
+    <table class="table-design tablelock1">
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Player</th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+           <%  @players_rpg.each.with_index(1) do |players_rpg, i| %>
+      <tbody>
+        <tr>
+          <td><div class="ranking"><%= i %> </div></td>
+          <td><%= players_rpg.name %></td>
+          <td><%= "##{players_rpg.number}"%> / <%=players_rpg.team %></td>
+          <td><%= players_rpg.rpg %></td>
+        </tr>
+      </tbody>
+           <% end %>
+    </table>
+  </div>

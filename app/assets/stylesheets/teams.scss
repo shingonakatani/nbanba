@@ -1,0 +1,68 @@
+// Place all the styles related to the teams controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+  box-sizing: border-box;
+  }
+
+* {
+  text-decoration: none;
+  }
+
+.teams-contents-index {
+  box-sizing:border-box;
+  border-right: 1px solid #4f4d47;
+  overflow-x:scroll;
+}
+
+table {
+  border-top:1px solid #4f4d47;
+  border-right:1px solid #4f4d47;
+  border-left:1px solid #4f4d47;
+  width:640px;
+  border-spacing:0;
+  margin:0 auto;
+  counter-reset:ranking;
+ 
+}
+
+table td.ranking {
+  counter-increment:ranking;
+}
+
+table td.ranking :before {
+  content: counter(ranking);
+}
+
+th {
+  border-left:1px solid #4f4d47;
+  text-align:center;
+  padding:5px;
+  background-color:#223a70;
+  color:#fff;
+}
+
+td {
+  text-align:center;
+  padding:5px;
+}
+
+/* teams/show --------- */
+.teams-show {
+  text-align: center;
+}
+
+.teams {
+  margin-bottom: 20px;
+}
+
+.teams h1 {
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.teams p {
+ font-size: 17px;
+ margin-bottom: 15px;
+}
