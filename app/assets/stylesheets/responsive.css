@@ -1,5 +1,5 @@
 /* タブレット向けレイアウト */
-@media (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
   
   .copy-container  {
     font-size: 32px;
@@ -15,7 +15,7 @@
 }
 
 /* スマホ向けレイアウト　*/
-@media (max-width: 670px) {
+@media screen and (max-width: 670px) {
   .copy-container  {
     font-size: 24px;
   }

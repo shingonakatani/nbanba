@@ -5,10 +5,11 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="stylesheet.css">
     <meta name="viewport"
     content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="responsive.css">
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 1000px)">
+    <link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 670px)">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
